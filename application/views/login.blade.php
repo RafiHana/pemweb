@@ -162,8 +162,7 @@
 <main class="form-signin w-100 m-auto">
   <form method="post" action="{{ site_url('login') }}">
     <!-- <img class="mb-4" src="https://usm.ac.id/wp-content/uploads/2022/09/xLogo-USM-Color-120x165.png.pagespeed.ic.6lPhRTIEOF.webp" alt="" width="130" height="170"> -->
-    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
-    
+    <h1 class="h3 mb-3 fw-normal">Please sign in </h1>
          @if($login_salah != '')
             <div class="alert alert-danger" role="alert">
                 {{$login_salah}}
@@ -171,7 +170,7 @@
         @endif
 
     <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" name="username" placeholder="">
+      <input type="text" class="form-control" id="floatingInput" name="username" placeholder="">
       <label for="floatingInput">Username</label>
     </div>
     <div class="form-floating">
@@ -183,7 +182,6 @@
     <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2023</p>
   </form>
 </main>
-<script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
     </body>
 </html>

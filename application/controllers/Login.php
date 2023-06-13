@@ -12,7 +12,8 @@ class Login extends CI_Controller {
 			$username = $this ->input ->post('username');
 			$password = $this ->input ->post('password');
 
-			if($username == 'raffi' && $password == '1234'){
+			$user = \Orm\User::first();
+			if($username == $user->username && $password == $user->password){
 			redirect('backend/dashboard');
 			} else{
 			$login_salah ='kombinasi username & password salah';
