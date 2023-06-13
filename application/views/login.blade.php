@@ -163,6 +163,12 @@
   <form method="post" action="{{ site_url('login') }}">
     <!-- <img class="mb-4" src="https://usm.ac.id/wp-content/uploads/2022/09/xLogo-USM-Color-120x165.png.pagespeed.ic.6lPhRTIEOF.webp" alt="" width="130" height="170"> -->
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    
+         @if($login_salah != '')
+            <div class="alert alert-danger" role="alert">
+                {{$login_salah}}
+            </div>
+        @endif
 
     <div class="form-floating">
       <input type="email" class="form-control" id="floatingInput" name="username" placeholder="">
